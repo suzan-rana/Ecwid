@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecwid</title>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'> -->
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js" defer></script>
+    
 </head>
 
 <body>
@@ -83,11 +86,11 @@
 
             </div>
             <nav>
-                <div class="hamburger-menu">
-                    <div class="bars"></div>
-                    <div class="bars"></div>
+                <div class="hamburger-menu" id="menu">
+                    <div class="bars" id="one"></div>
+                    <div class="bars" id="two"></div>
                 </div>
-                <ul class="list">
+                <ul class="list" id="ul">
                     <div class="item-one">
                         <li class="list--items"><a href="#">Sell</a></li>
                         <li class="list--items"><a href="#">Market</a></li>
@@ -99,9 +102,8 @@
                         <li class="list--items"><a href="#">Pricing</a></li>
                         <li class="list--items"><a href="#">Login</a></li>
                     </div>
-                    <div class="button">
-                        <button>Get started for free <i class='bx bx-right-arrow-alt'></i></button>
-                    </div>
+                    <button>Get started for free <box-icon name='right-arrow-alt'></box-icon> </button>
+
                 </ul>
             </nav>
         </header>
@@ -109,16 +111,20 @@
     </section>
     <div class="push"></div>
     <!-- hero--section================================ -->
-    <section class="hero--section container--lg">
-        <h1 class="text-center first">Start selling online for free</h1>
-        <div class="image">
-            <img src="./assets/first.jpg" alt="">
-        </div>
+    <section class="hero--section container--lg ">
+        <h1 class="text-center first not-active">Start selling online for free</h1>
 
-        <div class="container--md hero--container--md">
-            <h1 class="de-active text-center">Start selling online for free</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur minima aut doloremque et fuga vero
-                debitis inventore consectetur veniam sapiente? Lorem ipsum dolor sit</p>
+        <div class="flex--container hero--container">
+            <div class="image">
+                <img src="./assets/first.jpg" alt="">
+            </div>
+
+            <div class="container--md  flex--items hero--container--md">
+                <h1 class="de-active text-center">Start selling online for free</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur minima aut doloremque et fuga
+                    vero
+                    debitis inventore consectetur veniam sapiente? Lorem ipsum dolor sit</p>
+            </div>
         </div>
 
 
@@ -151,7 +157,7 @@
                 <h3>Sell anywhere</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad animi blanditiis provident laboriosam
                     quam ratione vero quo harum, molestiae unde.</p>
-                <button>Learn more</button>
+                <button>Learn more <box-icon name='right-arrow-alt'></box-icon></button>
             </div>
             <div class="flex--container social--container">
                 <div class="flex--items">
@@ -192,14 +198,14 @@
         </div>
     </div>
     <!-- grow--faster====================== -->
-    <section class="grow--faster container--lg">
+    <section class="grow--faster flex--container container--lg">
 
         <div class="flex--items container--md">
             <div class="container--sm">
                 <h3>Grow Faster</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad animi blanditiis provident laboriosam
                     quam ratione vero quo harum, molestiae unde.</p>
-                <button>Learn more <i class='bx bx-right-arrow-alt'></i></button>
+                <button>Learn more <box-icon name='right-arrow-alt'></box-icon></button>
             </div>
             <div class="flex--container boxes">
                 <div class="flex--items box--item">
@@ -246,9 +252,9 @@
                 <h3>Manage simply</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad animi blanditiis provident laboriosam
                     quam ratione vero quo harum, molestiae unde.</p>
-                <button>Learn more <i class='bx bx-right-arrow-alt'></i></button>
+                <button>Learn more <box-icon name='right-arrow-alt'></box-icon></button>
             </div>
-            <div class="flex--container boxes">
+            <div class="flex--container boxes--manage">
                 <div class="flex--items box--item">
                     <h4>Facebook</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit dolorem modi ullam
@@ -292,10 +298,11 @@
     <section class="trustpilot--container">
 
 
-        <div class="sell--around--world">
-            <div class=" trustpilot--innner-container">
+        <div class="sell--around--world flex--container">
+            <div class="trustpilot--inner-container sell--around--inner">
                 <h4>Sell around the world</h4>
-                <p class="spacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ex. Dolorum, doloribus fugiat
+                <p class="spacing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, ex. Dolorum,
+                    doloribus fugiat
                     esse
                     corrupti perspiciatis aspernatur et quis explicabo quaerat, voluptas pariatur a amet!</p>
             </div>
@@ -321,7 +328,7 @@
             </div>
             <h5>Live Support</h5>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button>Learn more <i class='bx bx-right-arrow-alt'></i></button>
+            <button>Learn more <box-icon name='right-arrow-alt'></box-icon></button>
         </div>
         <div class="inner--container box--item">
             <div class="icon">
@@ -329,7 +336,7 @@
             </div>
             <h5>Live Support</h5>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button>Learn more <i class='bx bx-right-arrow-alt'></i></button>
+            <button>Learn more<box-icon name='right-arrow-alt'></box-icon></button>
         </div>
         <div class="inner--container box--item">
             <div class="icon">
@@ -337,16 +344,16 @@
             </div>
             <h5>Live Support</h5>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button>Learn more <i class='bx bx-right-arrow-alt'></i></button>
+            <button>Learn more <box-icon name='right-arrow-alt'></box-icon></button>
         </div>
 
     </div>
 
     <div class="trustpilot--container">
         <div class="free--inner">
-            <h5>Your free online store is just a few clicks away.</h5>
-            <div class="inner--freerer">
-                <button>Get started for free <i class='bx bx-right-arrow-alt'></i></button>
+            <h5 class="text-center">Your free online store is just a few clicks away.</h5>
+            <div class="inner--freerer text-center">
+                <button>Get started for free <box-icon name='right-arrow-alt'></box-icon></button>
                 <p>No credit card required.</p>
             </div>
         </div>
