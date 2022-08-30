@@ -71,6 +71,9 @@ h1, h3 {
     line-height: 1.25;
     text-align: center;
 }
+h4, h5 {
+    text-transform: capitalize;
+}
 
 .first {
     text-transform: capitalize;
@@ -290,6 +293,9 @@ ul button {
     
     /* border: 2px ; */
     padding: 1rem 2rem;
+}
+.sell--around--world  .trustpilot--inner-container {
+    padding: 0;
 }
 
 .trustpilot--inner-container .flex--container {
