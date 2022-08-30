@@ -17,6 +17,10 @@ i {
     width: 5px;
     height: 5px;
 }
+
+.logo {
+    cursor: pointer;
+}
 .text-center {
     text-align: center;
 }
@@ -126,7 +130,9 @@ svg {
 /* .flex--container {
     display: flex;
 } */
-
+li {
+    cursor: pointer;
+}
 
 .active--bar-one {
     transform: rotate(45deg);
@@ -388,6 +394,10 @@ ul button {
     color: black;
  }
 
+ box-icon {
+    display: block;
+ }
+
  @media( min-width: 1200px) {
     .flex--container {
         display: flex;
@@ -481,15 +491,11 @@ ul button {
     }
     li {
         padding: .25rem 1rem;
+        position: relative;
     }
     ul li a {
         font-size: 1.125rem;
     }
-
-    ul li:hover {
-        background-color: none;
-    }
-
 
     ul button {
         justify-content: center;
@@ -536,8 +542,7 @@ ul button {
     .inner--freerer button {
         margin: 1rem auto;
     }
-    /* .free--inner { 
-        /* width: 80%; */
-        /* margin-inline: auto; */
-    /* } */ 
+    
+
+
  }  
